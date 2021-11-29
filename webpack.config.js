@@ -1,10 +1,12 @@
 const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
 const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 
+const isDev = process.env.NODE_ENV === 'development'
+console.log(isDev)
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
@@ -18,19 +20,20 @@ module.exports = {
   },
 
   devServer: {
-    hot:true,
+    hot: isDev,
     port: 9000,
     static: './dist',
     watchFiles: 'src/**/*'
-
-
   },
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
     }),
-
+    new StylelintPlugin({
+      context: path.resolve(__dirname, 'src'),
+      extensions: ['css', 'scss']
+    }),
     new CopyPlugin({
       patterns: [
         { from: "images", to: "images" },
