@@ -9,7 +9,7 @@
     "declaration-block-no-shorthand-property-overrides":true,
     "block-no-empty":true,
     "selector-pseudo-class-no-unknown":true,
-    "no-duplicate-selectors" :true,
-    "font-weight-notation":true,
+    "no-duplicate-selectors" :true
+   
   }
 }
