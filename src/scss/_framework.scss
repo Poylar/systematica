@@ -23,12 +23,11 @@
 .space-around {
   justify-content: space-around;
 }
-
+$pd: 30px;
 body .container {
-  max-width: 1284px;
+  max-width: calc(1284px + #{$pd});
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 $pd 0;
   width: 100%;
 
   &.content {
@@ -92,5 +91,5 @@ body .container {
 
 a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }

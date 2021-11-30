@@ -10,7 +10,7 @@ body {
   font-family: Stolzl;
   color: $white;
   font-weight: 350;
-  font-size: 16px;
+  font-size: 15px;
   height: 200vh;
   box-sizing: border-box;
   .header {
@@ -70,7 +70,7 @@ body {
   .main {
     padding: 48px 0;
     .main-title {
-      font-size: 3em;
+      font-size: 3.2em;
 
       line-height: 146%;
       letter-spacing: 0.02em;
@@ -117,14 +117,15 @@ body {
             position: relative;
             .search__input {
               width: 100%;
-              padding: 16px 24px;
-              background: $dgray;
-              border-radius: 100px;
+              padding: 16px 20px;
+              background: transparent;
+              border: 1px solid $bc;
+              border-radius: 12px;
               font-family: Stolzl;
               height: 100%;
               color: $white;
               &::placeholder {
-                font-size: 16px;
+                font-size: 15px;
                 font-family: Stolzl;
                 font-weight: 350;
                 color: #545551;
@@ -139,10 +140,10 @@ body {
         .filter__item {
           padding: 16px 27px;
           transition: 0.35s;
-          border: 1px solid #31322f;
+          border: 1px solid $bc;
           border-radius: 100px;
           margin: 0 16px 0 0;
-          font-size: 14px;
+          font-size: 15px;
           cursor: pointer;
           &-icon {
             width: 16px;
