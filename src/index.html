@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+
+<body>
+
+  <header class="header">
+    <div class="container row align-center">
+      <div class="header__col header__logo">
+        <a href="/" class="header__logo-link">
+          <img class="header__logo-img" src="./images/logo.svg" alt="Systematica">
+        </a>
+      </div>
+      <nav class="header__col header__nav">
+        <ul class="header__nav-wrapper row">
+          <li class="header__nav-item">
+            <a href="">Browse</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="">About</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="">Dictionary</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__col header__info">
+        <div class="header__info-content row">
+          <span class="header__content-date">
+            30 Oct. 2021:
+          </span>
+          <span class="header__content-ref">
+            2,053 references
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="container">
+      <h1 class="main-title">
+        Explore our library of
+        <span class="main-title-writing typewrite" data-period="2000"
+          data-type='[ "shittest", "useful", "brilliant", "outdated", "real" ]'>
+          <span class="wrap"></span>
+        </span>
+        <br>
+        UX/UI references
+      </h1>
+    </section>
+    <section class="container">
+      <div class="selection__wrapper">
+        <div class="selection__search row">
+          <div class="search__form">
+            <form action="">
+              <input type="text" placeholder="Start typing, we’ll help you (try call to action)" class="search__input">
+              <label class="search__label">
+                <input class="search__submit" type="submit">
+              </label>
+            </form>
+
+          </div>
+
+        </div>
+        <div class="selection__filter row">
+          <div class="filter__item row align-center">
+            <div class="filter__item-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.5 3H2.5C2.22386 3 2 3.22386 2 3.5V12.5C2 12.7761 2.22386 13 2.5 13H13.5C13.7761 13 14 12.7761 14 12.5V3.5C14 3.22386 13.7761 3 13.5 3Z"
+                  stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M10.5 5.5C10.5 6.16304 10.2366 6.79893 9.76777 7.26777C9.29893 7.73661 8.66304 8 8 8C7.33696 8 6.70107 7.73661 6.23223 7.26777C5.76339 6.79893 5.5 6.16304 5.5 5.5"
+                  stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="filter__item-name">
+              Filter by Industry
+            </div>
+          </div>
+          <div class="filter__item row align-center">
+            <div class="filter__item-icon">
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.25 7C6.49264 7 7.5 5.99264 7.5 4.75C7.5 3.50736 6.49264 2.5 5.25 2.5C4.00736 2.5 3 3.50736 3 4.75C3 5.99264 4.00736 7 5.25 7Z"
+                  stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M11.75 7C12.9926 7 14 5.99264 14 4.75C14 3.50736 12.9926 2.5 11.75 2.5C10.5074 2.5 9.5 3.50736 9.5 4.75C9.5 5.99264 10.5074 7 11.75 7Z"
+                  stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M5.25 13.5C6.49264 13.5 7.5 12.4926 7.5 11.25C7.5 10.0074 6.49264 9 5.25 9C4.00736 9 3 10.0074 3 11.25C3 12.4926 4.00736 13.5 5.25 13.5Z"
+                  stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M11.75 13.5C12.9926 13.5 14 12.4926 14 11.25C14 10.0074 12.9926 9 11.75 9C10.5074 9 9.5 10.0074 9.5 11.25C9.5 12.4926 10.5074 13.5 11.75 13.5Z"
+                  stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+            </div>
+            <div class="filter__item-name">
+              Filter by Pattern
+            </div>
+          </div>
+          <div class="filter__item row align-center">
+            <div class="filter__item-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 6.5L8 10.5L15 6.5L8 2.5L1 6.5Z" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M1 9L8 13L15 9" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+            </div>
+            <div class="filter__item-name">
+              Filter by Element
+            </div>
+          </div>
+          <div class="filter__item row align-center">
+            <div class="filter__item-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.2375 7.23746L11.5429 7.54292C11.6358 7.63577 11.7095 7.74601 11.7597 7.86734C11.81 7.98866 11.8358 8.1187 11.8358 8.25002C11.8358 8.38134 11.81 8.51138 11.7597 8.63271C11.7095 8.75403 11.6358 8.86427 11.5429 8.95713L11.1036 9.39647C11.0098 9.49024 10.8827 9.54291 10.75 9.54291C10.6174 9.54291 10.4903 9.49024 10.3965 9.39647L6.6036 5.60357C6.50983 5.50981 6.45715 5.38263 6.45715 5.25002C6.45715 5.11741 6.50983 4.99024 6.6036 4.89647L7.04294 4.45713C7.1358 4.36427 7.24604 4.29061 7.36736 4.24036C7.48869 4.1901 7.61872 4.16424 7.75005 4.16424C7.88137 4.16424 8.0114 4.1901 8.13273 4.24036C8.25406 4.29061 8.3643 4.36427 8.45715 4.45713L8.76261 4.76258L10.4869 3.03833C11.1611 2.36406 12.2597 2.32276 12.9522 2.97829C13.1222 3.139 13.2583 3.33218 13.3524 3.54639C13.4464 3.7606 13.4966 3.9915 13.4999 4.22543C13.5032 4.45936 13.4595 4.69157 13.3715 4.90834C13.2835 5.12511 13.1529 5.32203 12.9875 5.48746L11.2375 7.23746Z"
+                  stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M9.9142 8.91412L6.4142 12.4141C6.16602 12.6625 5.8568 12.8412 5.51764 12.9321C5.17849 13.023 4.82138 13.023 4.48223 12.9321L3.01959 13.5706C2.92748 13.6108 2.82539 13.6223 2.72664 13.6037C2.62788 13.585 2.53705 13.537 2.46598 13.4659V13.4659C2.41496 13.4149 2.3805 13.3497 2.36709 13.2788C2.35368 13.2079 2.36195 13.1346 2.39082 13.0684L3.06782 11.5177C2.97689 11.1785 2.97689 10.8214 3.06781 10.4823C3.15874 10.1431 3.33738 9.83388 3.58577 9.58569L7.08577 6.08569"
+                  stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+            </div>
+            <div class="filter__item-name">
+              Filter by Color
+            </div>
+          </div>
+          <div class="filter__item row align-center">
+            <div class="filter__item-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 13H2V3" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M13 4L8 9L6 7L2 11" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M13 6.5V4H10.5" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+            </div>
+            <div class="filter__item-name">
+              Filter by Trend
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="selection__grid">
+        <div class="grid__column col">
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/1.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/2.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/3.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/4.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/5.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/6.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/7.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/8.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/9.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/10.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/11.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/12.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/13.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/14.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid__column col">
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/4.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/5.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/6.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/7.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/8.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/9.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/10.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/11.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/12.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/13.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/14.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid__column col">
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/1.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/2.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/3.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/4.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/5.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/6.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/7.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/8.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/9.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/10.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/11.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/12.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/13.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+          <div class="column__item col">
+            <div class="column__item-image"> <img src="./images/14.jpg" alt=""> </div>
+            <div class="column__item-text col">
+              <div class="column__tags row">
+                <div class="tags__item"> Gradient </div>
+                <div class="tags__item"> Real Estate </div>
+                <div class="tags__item"> Call to Action </div>
+              </div>
+              <div class="column__creator row"> <span>by</span> Walter Living </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+</body>
+
+</html>

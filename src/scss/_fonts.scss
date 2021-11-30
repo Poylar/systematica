@@ -1,0 +1,11 @@
+@mixin font($fname, $fweight, $number, $fstyle) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $number;
+    src: url("../fonts/" + $fname + "-" + $fweight + ".woff2") format("woff2");
+  }
+}
+@include font(Stolzl, Book, 350, normal);
+@include font(Stolzl, Medium, 500, normal);
+@include font(Stolzl, Regular, 400, normal);
