@@ -1,0 +1,84 @@
+<%- include templates/header -%>
+
+<main class="main">
+  <section class="container">
+    <h1 class="main-title">
+      Explore our library of
+      <span
+        class="main-title-writing typewrite"
+        data-period="2000"
+        data-type='[ "shittest", "useful", "brilliant", "outdated", "real" ]'
+      >
+        <span class="wrap"></span>
+      </span>
+      <br />
+      UX/UI references
+    </h1>
+  </section>
+  <section class="container">
+    <div class="selection__wrapper">
+      <div class="selection__search row">
+        <div class="search__form">
+          <form action="">
+            <input
+              type="text"
+              placeholder="Start typing, we’ll help you (try call to action)"
+              class="search__input"
+            />
+            <label class="search__label" >
+              <svg class="icon icon--web" width="16" height="16">
+                <use xlink:href="sprite.svg#search"></use>
+              </svg>
+              <input class="search__submit" type="submit" />
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="selection__filter row">
+        <div class="filter__item row align-center">
+          <div class="filter__item-icon">
+            <svg class="icon icon--web" width="16" height="16">
+              <use xlink:href="sprite.svg#ShoppingBag"></use>
+            </svg>
+          </div>
+          <div class="filter__item-name">Filter by Industry</div>
+        </div>
+        <div class="filter__item row align-center">
+          <div class="filter__item-icon">
+            <svg class="icon icon--web" width="16" height="16">
+              <use xlink:href="sprite.svg#CirclesFour"></use>
+            </svg>
+          </div>
+          <div class="filter__item-name">Filter by Pattern</div>
+        </div>
+        <div class="filter__item row align-center">
+          <div class="filter__item-icon">
+            <svg class="icon icon--web" width="16" height="16">
+              <use xlink:href="sprite.svg#StackSimple"></use>
+            </svg>
+          </div>
+          <div class="filter__item-name">Filter by Element</div>
+        </div>
+        <div class="filter__item row align-center">
+          <div class="filter__item-icon">
+            <svg class="icon icon--web" width="16" height="16">
+              <use xlink:href="sprite.svg#Eyedropper"></use>
+            </svg>
+          </div>
+          <div class="filter__item-name">Filter by Color</div>
+        </div>
+        <div class="filter__item row align-center">
+          <div class="filter__item-icon">
+            <svg class="icon icon--web" width="16" height="16">
+              <use xlink:href="sprite.svg#ChartLineUp"></use>
+            </svg>
+          </div>
+          <div class="filter__item-name">Filter by Trend</div>
+        </div>
+      </div>
+    </div>
+    <%- include templates/selection-%>
+  </section>
+</main>
+
+<%- include templates/footer-%>

@@ -93,3 +93,19 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.main-title {
+  font-size: 3.2em;
+  line-height: 146%;
+  letter-spacing: 0.02em;
+  
+  &-writing {
+    border-right: 3px solid $lime;
+    animation: 0.5s step-start 0.5s infinite alternate blink;
+    color: $lime;
+  }
+}
+
+.gray__text {
+  color:$gtext;
+}

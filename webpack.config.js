@@ -1,30 +1,33 @@
-const path = require('path')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
+const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
+const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
-const isDev = process.env.NODE_ENV === 'development'
-const isProd = !isDev
-console.log(isDev)
+const isDev = process.env.NODE_ENV === 'development';
+const isProd = !isDev;
+
+
+console.log(isDev);
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
   entry: {
     main: ['@babel/polyfill', '/js/app.js'],
-
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'js/[name].js'
+    filename: 'js/[name].js',
   },
 
   devServer: {
-    hot: isDev,
+    hot: false,
+
     port: 9000,
     static: './dist',
-    watchFiles: 'src/**/*'
+    watchFiles: 'src/**/*',
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -33,38 +36,51 @@ module.exports = {
     }),
     new StylelintPlugin({
       context: path.resolve(__dirname, 'src'),
-      extensions: ['css', 'scss']
+      extensions: ['css', 'scss'],
     }),
     new CopyPlugin({
-      patterns: [
-        { from: "images", to: "images" },
-        { from: "fonts", to: "fonts" },
-      ],
+      patterns: [{ from: 'images', to: 'images' }],
     }),
+    new SpriteLoaderPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: '/index.html',
+      template: '!!ejs-compiled-loader!/index.ejs',
       minify: {
-        collapseWhitespace: isProd
-      }
+        collapseWhitespace: isProd,
+      },
     }),
-
-
+    new HtmlWebpackPlugin({
+      filename: 'item.html',
+      template: '!!ejs-compiled-loader!/item.ejs',
+      minify: {
+        collapseWhitespace: isProd,
+      },
+    }),
   ],
   module: {
     rules: [
       {
+        test: /\.ejs$/,
+        use: {
+          loader: 'ejs-compiled-loader',
+          options: {
+            htmlmin: true,
+            htmlminOptions: {
+              removeComments: true,
+            },
+          },
+        },
+      },
+      {
         test: /\.css$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
+          'css-loader',
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [
-                  require('autoprefixer'),
-                ],
+                plugins: [require('autoprefixer')],
               },
             },
           },
@@ -74,22 +90,31 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
+          'css-loader',
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [
-                  require('autoprefixer'),
-                ],
+                plugins: [require('autoprefixer')],
               },
             },
           },
-          "sass-loader",
+          'sass-loader',
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
+        test: /svg\/.*\.svg$/,
+        use: [
+          {
+            loader: 'svg-sprite-loader',
+            options: {
+              extract: true,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
         type: 'asset/resource',
         generator: {
           filename: './images/[name][ext]',
@@ -108,11 +133,10 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env']
-          }
-        }
-      }
-
-    ]
-  }
-}
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
+    ],
+  },
+};

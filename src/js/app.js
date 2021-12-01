@@ -1,5 +1,9 @@
-import '../scss/app.scss'
+import '../scss/app.scss';
+function requireAll(r) {
+  r.keys().forEach(r);
+}
 
+requireAll(require.context('../images/svg/', true, /\.svg$/));
 var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -25,7 +29,9 @@ TxtType.prototype.tick = function () {
   var that = this;
   var delta = 200 - Math.random() * 100;
 
-  if (this.isDeleting) { delta /= 2; }
+  if (this.isDeleting) {
+    delta /= 2;
+  }
 
   if (!this.isDeleting && this.txt === fullTxt) {
     delta = this.period;
@@ -50,26 +56,20 @@ window.onload = function () {
       new TxtType(elements[i], JSON.parse(toRotate), period);
     }
   }
-
 };
-
-
-
-const filterBtn = document.querySelector('[data-event="filter"]')
-const filterWrap = document.querySelector('.selection__filter');
-let isOpen = false;
-filterBtn.addEventListener('click', () => {
-  if (!isOpen) {
-    filterBtn.classList.add('active')
-    filterWrap.style.height = `${filterWrap.scrollHeight}px`
-    filterWrap.classList.add('active')
-    isOpen = true;
-  } else {
-    filterBtn.classList.remove('active')
-    filterWrap.style.height = `0px`
-    filterWrap.classList.remove('active')
-    isOpen = false;
+document.addEventListener('click', (e) => {
+  const searchEl = document.querySelector('.search__input');
+  const searchbtn = document.querySelector('.search__label');
+  if (
+    searchEl.classList.contains('active') &&
+    !e.target.closest('[data-event="open-search"]')
+  ) {
+    [searchEl, searchbtn].forEach((elem) => {
+      elem.classList.remove('active');
+    });
+  } else if (e.target.closest('[data-event="open-search"]')) {
+    [searchEl, searchbtn].forEach((elem) => {
+      elem.classList.add('active');
+    });
   }
-})
-
-
+});
