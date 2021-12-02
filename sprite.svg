@@ -25,6 +25,11 @@
 </symbol><symbol viewBox="0 0 16 16" fill="none" id="StackSimple">
 <path d="M1 6.5L8 10.5L15 6.5L8 2.5L1 6.5Z" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M1 9L8 13L15 9" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</symbol><symbol viewBox="0 0 16 16" fill="none" id="arrow">
+<path d="M10 13L5 8L10 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</symbol><symbol viewBox="0 0 16 16" fill="none" id="close">
+<path d="M12.5 3.5L3.5 12.5" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M12.5 12.5L3.5 3.5" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 </symbol><symbol viewBox="0 0 17 16" fill="none" id="filter">
 <path d="M4.5 8H12.5" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M2 5H15" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -44,7 +49,12 @@
 </symbol><symbol viewBox="0 0 16 16" fill="none" id="search">
 <path d="M7.25 12.5C10.1495 12.5 12.5 10.1495 12.5 7.25C12.5 4.35051 10.1495 2 7.25 2C4.35051 2 2 4.35051 2 7.25C2 10.1495 4.35051 12.5 7.25 12.5Z" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M10.962 10.9625L13.9996 14.0001" stroke="#F5F5F5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</symbol><symbol viewBox="0 0 48 48" fill="none" id="small-logo">
+<circle cx="24" cy="24" r="23.5" fill="#F5F5F5" stroke="#F5F5F5" />
+<path d="M13.0487 21.8178C12.8461 21.0729 13.2948 20.3072 14.0508 20.1076L33.2156 15.0479C33.9717 14.8483 34.7488 15.2904 34.9514 16.0353C35.1539 16.7802 34.7053 17.5459 33.9492 17.7455L14.7844 22.8052C14.0284 23.0048 13.2513 22.5627 13.0487 21.8178Z" fill="#060901" />
+<path d="M13.0486 21.1059C13.2512 20.361 14.0283 19.9189 14.7844 20.1185L33.9492 25.1782C34.7052 25.3778 35.1538 26.1435 34.9513 26.8884C34.7487 27.6333 33.9716 28.0754 33.2156 27.8758L14.0508 22.8161C13.2947 22.6165 12.8461 21.8508 13.0486 21.1059Z" fill="#060901" />
+<path d="M13.0487 31.9647C12.8461 31.2198 13.2948 30.4541 14.0508 30.2545L33.2156 25.1948C33.9717 24.9952 34.7488 25.4373 34.9514 26.1822C35.1539 26.9271 34.7053 27.6928 33.9492 27.8924L14.7844 32.9521C14.0284 33.1517 13.2513 32.7096 13.0487 31.9647Z" fill="#060901" />
 </symbol><symbol viewBox="0 0 16 16" fill="none" id="tablet">
 <path d="M13 13V3C13 2.44772 12.5523 2 12 2L4 2C3.44771 2 3 2.44772 3 3V13C3 13.5523 3.44771 14 4 14H12C12.5523 14 13 13.5523 13 13Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M6 4H10" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-</symbol></defs><use id="BookmarksSimple-usage" xlink:href="#BookmarksSimple" class="sprite-symbol-usage" /><use id="ChartLineUp-usage" xlink:href="#ChartLineUp" class="sprite-symbol-usage" /><use id="CirclesFour-usage" xlink:href="#CirclesFour" class="sprite-symbol-usage" /><use id="Eyedropper-usage" xlink:href="#Eyedropper" class="sprite-symbol-usage" /><use id="Link-usage" xlink:href="#Link" class="sprite-symbol-usage" /><use id="ShoppingBag-usage" xlink:href="#ShoppingBag" class="sprite-symbol-usage" /><use id="StackSimple-usage" xlink:href="#StackSimple" class="sprite-symbol-usage" /><use id="filter-usage" xlink:href="#filter" class="sprite-symbol-usage" /><use id="logo-usage" xlink:href="#logo" class="sprite-symbol-usage" /><use id="mobile-usage" xlink:href="#mobile" class="sprite-symbol-usage" /><use id="mon-usage" xlink:href="#mon" class="sprite-symbol-usage" /><use id="search-usage" xlink:href="#search" class="sprite-symbol-usage" /><use id="tablet-usage" xlink:href="#tablet" class="sprite-symbol-usage" /></svg>
+</symbol></defs><use id="BookmarksSimple-usage" xlink:href="#BookmarksSimple" class="sprite-symbol-usage" /><use id="ChartLineUp-usage" xlink:href="#ChartLineUp" class="sprite-symbol-usage" /><use id="CirclesFour-usage" xlink:href="#CirclesFour" class="sprite-symbol-usage" /><use id="Eyedropper-usage" xlink:href="#Eyedropper" class="sprite-symbol-usage" /><use id="Link-usage" xlink:href="#Link" class="sprite-symbol-usage" /><use id="ShoppingBag-usage" xlink:href="#ShoppingBag" class="sprite-symbol-usage" /><use id="StackSimple-usage" xlink:href="#StackSimple" class="sprite-symbol-usage" /><use id="arrow-usage" xlink:href="#arrow" class="sprite-symbol-usage" /><use id="close-usage" xlink:href="#close" class="sprite-symbol-usage" /><use id="filter-usage" xlink:href="#filter" class="sprite-symbol-usage" /><use id="logo-usage" xlink:href="#logo" class="sprite-symbol-usage" /><use id="mobile-usage" xlink:href="#mobile" class="sprite-symbol-usage" /><use id="mon-usage" xlink:href="#mon" class="sprite-symbol-usage" /><use id="search-usage" xlink:href="#search" class="sprite-symbol-usage" /><use id="small-logo-usage" xlink:href="#small-logo" class="sprite-symbol-usage" /><use id="tablet-usage" xlink:href="#tablet" class="sprite-symbol-usage" /></svg>
