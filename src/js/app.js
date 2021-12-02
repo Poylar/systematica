@@ -88,3 +88,4 @@ document.addEventListener('click', (e) => {
     Sidebar.classList.remove('active');
   }
 });
+
