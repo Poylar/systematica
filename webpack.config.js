@@ -9,7 +9,6 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
 
-
 console.log(isDev);
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -41,7 +40,12 @@ module.exports = {
     new CopyPlugin({
       patterns: [{ from: 'images', to: 'images' }],
     }),
-    new SpriteLoaderPlugin(),
+    new SpriteLoaderPlugin({
+      plainSprite: true,
+      spriteAttrs: {
+        fill: '#fff',
+      },
+    }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: '!!ejs-compiled-loader!/index.ejs',
