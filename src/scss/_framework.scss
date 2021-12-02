@@ -98,7 +98,7 @@ a {
   font-size: 3.2em;
   line-height: 146%;
   letter-spacing: 0.02em;
-  
+
   &-writing {
     border-right: 3px solid $lime;
     animation: 0.5s step-start 0.5s infinite alternate blink;
@@ -107,5 +107,10 @@ a {
 }
 
 .gray__text {
-  color:$gtext;
+  color: $gtext;
+}
+
+.secondary__title {
+  font-size: 32px;
+  margin: 0 0 40px 0;
 }

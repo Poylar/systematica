@@ -50,8 +50,31 @@
       </div>
     </div>
     <div class="selection__single row">
-      <div class="selection__preview">
-        <img class="selection__preview-img" src="./images/preview.jpg" alt="" />
+      <div class="selection__main">
+        <div class="selection__preview">
+          <img
+            class="selection__preview-img"
+            src="./images/preview.jpg"
+            alt=""
+          />
+        </div>
+        <div class="selection__nav row space-between">
+          <div class="selection__nav_item selection__item_prev">
+            <svg class="selection__nav_icon" width="16" height="16">
+              <use xlink:href="sprite.svg#arrow" x="" y="" />
+            </svg>
+            <a href="#" class="selection__nav_link">Previous ref</a>
+          </div>
+          <div class="selection__nav_item selection__item_back">
+            <a href="#" class="selection__nav_link">Back to search results</a>
+          </div>
+          <div class="selection__nav_item selection__item_next">
+            <a href="#" class="selection__nav_link">Next ref</a>
+            <svg class="selection__nav_icon" width="16" height="16">
+              <use xlink:href="sprite.svg#arrow" x="" y="" />
+            </svg>
+          </div>
+        </div>
       </div>
       <div class="selection__sidebar col">
         <div class="selection__tags col">

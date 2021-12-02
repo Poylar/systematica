@@ -73,3 +73,18 @@ document.addEventListener('click', (e) => {
     });
   }
 });
+const Sidebar = document.querySelector('.filter__sidebar-wrapper');
+document.addEventListener('click', (e) => {
+  if (
+    e.target.closest('[data-filter]') &&
+    !Sidebar.classList.contains('active')
+  ) {
+    Sidebar.classList.add('active');
+  } else if (
+    (Sidebar.classList.contains('active') &&
+      e.target.closest('.filter__close')) ||
+    !e.target.closest('.filter__sidebar-wrapper')
+  ) {
+    Sidebar.classList.remove('active');
+  }
+});
