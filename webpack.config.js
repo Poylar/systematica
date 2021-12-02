@@ -44,6 +44,7 @@ module.exports = {
       plainSprite: true,
       spriteAttrs: {
         fill: '#fff',
+        class: 'svg-icon'
       },
     }),
     new HtmlWebpackPlugin({
