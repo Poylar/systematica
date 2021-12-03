@@ -208,7 +208,9 @@ body {
         will-change: transform;
         position: relative;
         &:hover {
-          transform: scale(1.05) translateZ(0);
+          img {
+            transform: scale(1.05) translateZ(0);
+          }
         }
         a {
           position: absolute;
@@ -267,10 +269,7 @@ body {
         border-color: $dgray;
       }
     }
-    .icon {
-      fill:$black;
-      stroke:$white;
-    }
+   
     .nav__top {
       margin: 36px 0 0;
       .nav__resolution {
@@ -285,6 +284,10 @@ body {
           cursor: pointer;
           transition: 0.35s;
           &.active {
+            &:hover {
+              background: inherit;
+              border-color:inherit;
+            }
             background: $white;
             color:$black;
             svg {

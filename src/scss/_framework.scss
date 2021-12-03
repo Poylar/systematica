@@ -29,7 +29,9 @@ body .container {
   margin: 0 auto;
   padding: 0 $pd 0;
   width: 100%;
-
+  @media (min-width: 1920px) {
+    max-width: calc(1584px + #{pd});
+  }
   &.content {
     padding: 100px 15px 100px 15px;
     &:first-child {
@@ -113,4 +115,8 @@ a {
 .secondary__title {
   font-size: 32px;
   margin: 0 0 40px 0;
+}
+.icon {
+  fill: $black;
+  stroke: $white;
 }
